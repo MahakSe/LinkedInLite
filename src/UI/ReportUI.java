@@ -196,7 +196,10 @@ public class ReportUI {
 
             System.out.println("0: Exit");
             String option = scanner.nextLine();
-            String actionReason = actionReason();
+            String actionReason = "";
+            if(!option.equals("0")) {
+                actionReason = actionReason();
+            }
             switch (option){
                 case "0":{return;}
                 case "1":{

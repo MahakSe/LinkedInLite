@@ -29,7 +29,8 @@ public class AdminUI {
             System.out.println("0: Exit");
             String option = scanner.nextLine();
             String actionReason = "";
-            if(!option.equals("1"))
+
+            if(!option.equals("1") && !option.equals("0"))
             {
                 actionReason = ReportUI.actionReason();
             }
